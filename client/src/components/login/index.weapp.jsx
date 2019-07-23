@@ -1,20 +1,9 @@
 import Taro, { Component } from "@tarojs/taro"
-import { View, Text, Button } from "@tarojs/components"
+import { View } from "@tarojs/components"
+import { AtButton } from 'taro-ui'
 
 export default class Login extends Component {
-  state = {
-    context: {}
-  }
-
-  componentWillMount() {}
-
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  componentDidShow() {}
-
-  componentDidHide() {}
+  state = {}
 
   getLogin = () => {
     Taro.cloud
@@ -23,17 +12,16 @@ export default class Login extends Component {
         data: {}
       })
       .then(res => {
-        this.setState({
-          context: res.result
-        })
+        console.log(res)
       })
   }
 
   render() {
+    // #a0a2a5
+    // #41464b
     return (
       <View className='index'>
-        <Button onClick={this.getLogin}>获取登录云函数</Button>
-        <Text>context：{JSON.stringify(this.state.context)}</Text>
+        <AtButton type='primary' size='normal' onClick={this.getLogin}>获取登录云函数</AtButton>
       </View>
     )
   }

@@ -1,17 +1,14 @@
 {
-	"miniprogramRoot": "client/dist/",
-	"cloudfunctionRoot": "cloud/functions/",
-	"projectname": "jia",
-	"description": "for niuniu",
-	"appid": "wx5945ebc59a46c7ef",
-	"setting": {
-		"urlCheck": true,
-		"es6": false,
-		"postcss": false,
-		"minified": false
-	},
-	"compileType": "miniprogram",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {}
+  "miniprogramRoot": "client/dist/",
+  "cloudfunctionRoot": "cloud/functions/",
+  "projectname": "jia",
+  "description": "for niuniu",
+  "appid": "wx5945ebc59a46c7ef",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
 }
