@@ -17,8 +17,6 @@ export default class Login extends Component {
   }
 
   render() {
-    // #a0a2a5
-    // #41464b
     return (
       <View className='index'>
         <AtButton type='primary' size='normal' onClick={this.getLogin}>获取登录云函数</AtButton>

@@ -7,15 +7,37 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/authorization/index',
+      'pages/account/index',
+      'pages/search/index'
     ],
+    cloud: true,
+    requiredBackgroundModes: ["audio"],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     },
-    cloud: true
+    tabBar: {
+      color: "#8D93A8",
+      selectedColor: "#FF2A31",
+      backgroundColor: "#FBFBFB",
+      borderStyle: "white",
+      list: [{
+        pagePath: "pages/index/index",
+        text: "首页",
+        iconPath: "./assets/images/home.png",
+        selectedIconPath: "./assets/images/homeSelected.png"
+      },
+      {
+        pagePath: "pages/account/index",
+        text: "我的",
+        iconPath: "./assets/images/mine.png",
+        selectedIconPath: "./assets/images/mineSelected.png"
+      }]
+    }
   }
 
   componentDidMount() {
@@ -23,6 +45,9 @@ class App extends Component {
       Taro.cloud.init()
     }
   }
+
+  // color #a0a2a5
+  // back #41464b
 
   render() {
     return (

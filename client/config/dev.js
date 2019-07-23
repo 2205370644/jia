@@ -1,9 +1,6 @@
-module.exports = {
-  env: {
-    NODE_ENV: '"development"'
-  },
-  defineConstants: {
-  },
-  weapp: {},
-  h5: {}
-}
+export const env = {
+  NODE_ENV: '"development"'
+};
+export const defineConstants = {};
+export const weapp = {};
+export const h5 = {};
